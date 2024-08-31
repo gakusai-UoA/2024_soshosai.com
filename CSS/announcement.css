@@ -51,6 +51,11 @@
             font-size: 5vw;
         }
 
+        .menu-button-text{
+            text-decoration: none;
+            color: white;
+        }
+
         .menu-linkList{
             display: block;
         }
