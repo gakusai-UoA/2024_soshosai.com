@@ -113,3 +113,17 @@
             .announcement-emergency{
                 padding-bottom: 5vw;
             }
+
+            h2{
+                align-items: center; /*横線を上下中央*/
+                display: flex; /* 文字と横線を横並び */
+                justify-content: baseline; /* 文字を中央寄せ */
+            }
+
+            h2::after{
+                background-color: rgb(61, 61, 61);
+                content: "";
+                height: 1.5px;
+                margin-left: 15px;
+                flex-grow: 1;
+            }
