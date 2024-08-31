@@ -101,7 +101,7 @@
             /* font-size: 4rem; */
             text-align: center;
             padding-top: 2vw;
-            padding-bottom: 10vw;
+            padding-bottom: 5vw;
         }
 
         .theme-background{
@@ -148,6 +148,10 @@
             margin: auto;
             text-align: center;
             font-size: 2vw;
+        }
+
+        .gest{
+            padding-top: 4vw;
         }
 
         /* .gest-title-text{
