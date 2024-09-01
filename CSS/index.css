@@ -154,11 +154,19 @@
             padding-top: 4vw;
         }
 
-        /* .gest-title-text{
-            
-        } */
+        .gest-detail{
+            display: flex;
+        }
+
+        .gest-picture{
+            padding: 0 5%;
+        }
 
         .gest-picture-img{
-            width: 100px;
-            height: 150px;
+            width: 20vw;
+            height: 25vw;
+        }
+
+        .gest-picture-text{
+            text-align: center;
         }
