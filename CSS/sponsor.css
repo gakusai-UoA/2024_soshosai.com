@@ -24,6 +24,10 @@
         height: 100%;
     }
 
+    p{
+        font-weight: bold;
+    }
+
     #container{
         display: flex;
         height: 100vh;
@@ -88,12 +92,16 @@
     .sponsor-title-text{
         text-align: center;
         padding-top: 2vw;
-        padding-bottom: 10vw;
+        padding-bottom: 3vw;
     }
 
     .sponsor-panel-container{
         width: 70%;
         margin: max(8vw, 10vh) auto;
+    }
+
+    .sponsor-panel-supplement{
+        text-align: center;
     }
 
     .sponsor-panel{
