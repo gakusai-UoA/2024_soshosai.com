@@ -174,6 +174,7 @@ p {
 .gest-picture-img {
     width: 20vw;
     height: 25vw;
+    object-fit: cover;
 }
 
 .gest-picture-text {
