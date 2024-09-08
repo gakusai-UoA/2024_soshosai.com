@@ -119,8 +119,10 @@ p {
 }
 
 .event-img {
-    height: 20vw;
+    height: 23vw;
+    width: 20vw;
     margin: 1vw;
+    object-fit: cover;
 }
 
 .event-explanation {
