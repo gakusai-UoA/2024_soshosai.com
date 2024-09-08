@@ -1,172 +1,180 @@
+/*基準を1rem=10pxに設定*/
+html {
+    font-size: 62.5%;
+}
 
+/*最小値:1.1rem → 可変（0.9rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.6rem*/
+.font-size-S {
+    font-size: clamp(1.1rem, calc(0.9rem + 0.625vw), 1.6rem);
+}
 
-        /*基準を1rem=10pxに設定*/
-        html{
-        font-size: 62.5%;
-    }
+/*最小値:1.2rem → 可変（1rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.7rem*/
+.font-size-M {
+    font-size: clamp(1.2rem, calc(1rem + 0.625vw), 1.7rem);
+}
 
-    /*最小値:1.1rem → 可変（0.9rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.6rem*/
-    .font-size-S {
-        font-size: clamp(1.1rem, calc(0.9rem + 0.625vw), 1.6rem);
-    }   
+/*最小値:1.6rem → 可変（2.2rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:2.9rem*/
+.font-size-L {
+    font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
+}
 
-    /*最小値:1.2rem → 可変（1rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.7rem*/
-    .font-size-M {
-        font-size: clamp(1.2rem, calc(1rem + 0.625vw), 1.7rem);
-    }
+body {
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+}
 
-    /*最小値:1.6rem → 可変（2.2rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:2.9rem*/
-    .font-size-L {
-        font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
-    }
+p {
+    font-weight: bold;
+}
 
-        body{
-            margin: 0px;
-            padding: 0;
-            height: 100%;
-        }
+#container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
 
-        p{
-            font-weight: bold;
-        }
+#menu {
+    background-color: #3EA6A7;
+    width: 20%;
+    height: 100%;
+    margin-bottom: 0px;
+    border: 8px;
+    border-color: #7A7B7B;
+    border-style: none solid none none;
+}
 
-        #container{
-            display: flex;
-            height: 100vh;
-            overflow: hidden;
-        }
+.menu-button {
+    background-color: #3EA6A7;
+    color: white;
+    border: #3EA6A7;
+    width: 100%;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 5vw;
+}
 
-        #menu{
-            background-color:#3EA6A7 ;
-            width:20%;
-            height: 100%;
-            margin-bottom: 0px;
-            border: 8px;
-            border-color: #7A7B7B;
-            border-style: none solid none none;
-        }
+.menu-button-text {
+    text-decoration: none;
+    color: white;
+}
 
-        .menu-button{
-            background-color: #3EA6A7;
-            color: white;
-            border: #3EA6A7;
-            width: 100%;
-            height: auto;
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-            font-size: 5vw;
-        }
+.menu-linkList {
+    display: block;
+}
 
-        .menu-button-text{
-            text-decoration: none;
-            color: white;
-        }
+.menu-link {
+    display: block;
+    width: 70%;
+    padding: 1vw 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+}
 
-        .menu-linkList{
-            display: block;
-        }
+#top {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    background-image: url(../picture/webp/蒼翔祭ロゴ背景.webp);
+    background-size: 10vw;
+    background-blend-mode: lighten;
+    overflow-y: scroll;
+    /* スクロールバーの消去 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
-        .menu-link{
-            display: block;
-            width: 70%;
-            padding: 1vw 0px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 1.5vw;
-            text-decoration: none;
-            color: white;
-        }
+#top::-webkit-scrollbar {
+    /* スクロールバーの消去 */
+    display: none;
+}
 
-        #top{
-            width: 80%;
-            /* background-color: bisque; */
-            background-image: url(../picture/webp/蒼翔祭ロゴ背景.webp);
-            background-color:rgba(255,255,255,0.7);
-            background-blend-mode:lighten;
-            overflow-y: scroll;
-            /* スクロールバーの消去 */
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        #top::-webkit-scrollbar{/* スクロールバーの消去 */
-            display: none;
-        }
+#top-effect {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    overflow: hidden;
+}
 
-        .top-container{
-            width: 70%;
-            margin: auto;
-        }
+.top-container {
+    width: 70%;
+    margin: auto;
+}
 
-        .top-title-text{
-            /* font-size: 4rem; */
-            text-align: center;
-            padding-top: 2vw;
-            padding-bottom: 5vw;
-        }
+.top-title-text {
+    /* font-size: 4rem; */
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+}
 
-        .theme-background{
-            position: relative;
-            background-color: #3EA6A7;
-            width: 50%;
-            height: auto;
-            margin-top: -2vw;
-            margin-left: auto;
-            margin-right: auto;
-            z-index: 0;
-            padding-top: 2vw;
-            padding-bottom: 2vw;
-            border-radius: 10px;
-            box-shadow: 0.5vw 1vw 0.5vw 0.5vh rgba(0,0,0,0.25);
-        }
+.theme-background {
+    position: relative;
+    background-color: #3EA6A7;
+    width: 50%;
+    height: auto;
+    margin-top: -2vw;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-radius: 10px;
+    box-shadow: 0.5vw 1vw 0.5vw 0.5vh rgba(0, 0, 0, 0.25);
+}
 
-        .theme-label{
-            position: relative;
-            width: 11vw;
-            height: 3vw;
-            background-color: #D9D9D9;
-            margin-left: 15vw;
-            margin-top: 3vw;
-            border-radius: 1.8vw;
-            z-index: 1;
-            box-shadow: 0.3vw 0.3vw 0.3vw 0.1vh rgba(0,0,0,0.25);
-        }
+.theme-label {
+    position: relative;
+    width: 11vw;
+    height: 3vw;
+    background-color: #D9D9D9;
+    margin-left: 15vw;
+    margin-top: 3vw;
+    border-radius: 1.8vw;
+    z-index: 1;
+    box-shadow: 0.3vw 0.3vw 0.3vw 0.1vh rgba(0, 0, 0, 0.25);
+}
 
-        .theme-label-text{
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            font-size: 0.9vw;
-        }
+.theme-label-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 0.9vw;
+}
 
-        .theme-text{
-            display: block;
-            color: white;
-            padding: 10px 0px;
-            margin: auto;
-            text-align: center;
-            font-size: 2vw;
-        }
+.theme-text {
+    display: block;
+    color: white;
+    padding: 10px 0px;
+    margin: auto;
+    text-align: center;
+    font-size: 2vw;
+}
 
-        .gest{
-            padding-top: 4vw;
-        }
+.gest {
+    padding-top: 4vw;
+}
 
-        .gest-detail{
-            display: flex;
-        }
+.gest-detail {
+    display: flex;
+}
 
-        .gest-picture{
-            padding: 0 5%;
-        }
+.gest-picture {
+    padding: 0 5%;
+}
 
-        .gest-picture-img{
-            width: 20vw;
-            height: 25vw;
-        }
+.gest-picture-img {
+    width: 20vw;
+    height: 25vw;
+}
 
-        .gest-picture-text{
-            text-align: center;
-        }
+.gest-picture-text {
+    text-align: center;
+}

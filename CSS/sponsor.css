@@ -1,5 +1,5 @@
     /*基準を1rem=10pxに設定*/
-    html{
+    html {
         font-size: 62.5%;
     }
 
@@ -18,25 +18,25 @@
         font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
     }
 
-    body{
+    body {
         margin: 0px;
         padding: 0;
         height: 100%;
     }
 
-    p{
+    p {
         font-weight: bold;
     }
 
-    #container{
+    #container {
         display: flex;
         height: 100vh;
         overflow: hidden;
     }
 
-    #menu{
-        background-color:#3EA6A7 ;
-        width:20%;
+    #menu {
+        background-color: #3EA6A7;
+        width: 20%;
         height: 100%;
         margin-bottom: 0px;
         border: 8px;
@@ -44,7 +44,7 @@
         border-style: none solid none none;
     }
 
-    .menu-button{
+    .menu-button {
         background-color: #3EA6A7;
         color: white;
         border: #3EA6A7;
@@ -55,16 +55,16 @@
         font-size: 5vw;
     }
 
-    .menu-button-text{
+    .menu-button-text {
         text-decoration: none;
         color: white;
     }
 
-    .menu-linkList{
+    .menu-linkList {
         display: block;
     }
 
-    .menu-link{
+    .menu-link {
         display: block;
         width: 70%;
         padding: 1vw 0px;
@@ -75,47 +75,59 @@
         color: white;
     }
 
-    #sponsor{
+    #sponsor {
+        position: relative;
+        height: 100%;
         width: 80%;
         background-image: url(..//picture/webp/蒼翔祭ロゴ_333399.webp);
-        background-color:rgba(255,255,255,0.7);
-        background-blend-mode:lighten;
+        background-size: 10vw;
+        background-blend-mode: lighten;
         overflow-y: scroll;
         /* スクロールバーの消去 */
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
-    #sponsor::-webkit-scrollbar{/* スクロールバーの消去 */
+
+    #sponsor::-webkit-scrollbar {
+        /* スクロールバーの消去 */
         display: none;
     }
 
-    .sponsor-title-text{
+    #sponsor-effect {
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .sponsor-title-text {
         text-align: center;
         padding-top: 2vw;
         padding-bottom: 3vw;
     }
 
-    .sponsor-panel-container{
+    .sponsor-panel-container {
         width: 70%;
         margin: max(8vw, 10vh) auto;
     }
 
-    .sponsor-panel-supplement{
+    .sponsor-panel-supplement {
         text-align: center;
     }
 
-    .sponsor-panel{
+    .sponsor-panel {
         margin: auto;
         display: block;
     }
 
-    .sponsor-panel-list{
+    .sponsor-panel-list {
         display: grid;
+        padding-bottom: 5vw;
         /* gap: 10px; */
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    .sponsor-panel-text{
+    .sponsor-panel-text {
         /* border-radius: 10px; */
         background: white;
         padding: 15px;

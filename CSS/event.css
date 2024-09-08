@@ -1,128 +1,143 @@
+/*基準を1rem=10pxに設定*/
+html {
+    font-size: 62.5%;
+}
 
-        /*基準を1rem=10pxに設定*/
-        html{
-            font-size: 62.5%;
-        }
-    
-        /*最小値:1.1rem → 可変（0.9rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.6rem*/
-        .font-size-S {
-            font-size: clamp(1.1rem, calc(0.9rem + 0.625vw), 1.6rem);
-        }   
-    
-        /*最小値:1.2rem → 可変（1rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.7rem*/
-        .font-size-M {
-            font-size: clamp(1.2rem, calc(1rem + 0.625vw), 1.7rem);
-        }
-    
-        /*最小値:1.6rem → 可変（2.2rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:2.9rem*/
-        .font-size-L {
-            font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
-        }
-    
-        body{
-            margin: 0px;
-            padding: 0;
-            height: 100%;
-        }
+/*最小値:1.1rem → 可変（0.9rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.6rem*/
+.font-size-S {
+    font-size: clamp(1.1rem, calc(0.9rem + 0.625vw), 1.6rem);
+}
 
-        #container{
-            display: flex;
-            height: 100vh;
-            overflow: hidden;
-        }
+/*最小値:1.2rem → 可変（1rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:1.7rem*/
+.font-size-M {
+    font-size: clamp(1.2rem, calc(1rem + 0.625vw), 1.7rem);
+}
 
-        #menu{
-            background-color:#3EA6A7 ;
-            width:20%;
-            height: 100%;
-            margin-bottom: 0px;
-            border: 8px;
-            border-color: #7A7B7B;
-            border-style: none solid none none;
-        }
+/*最小値:1.6rem → 可変（2.2rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:2.9rem*/
+.font-size-L {
+    font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
+}
 
-        .menu-button{
-            background-color: #3EA6A7;
-            color: white;
-            border: #3EA6A7;
-            width: 100%;
-            height: auto;
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-            font-size: 5vw;
-        }
+body {
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+}
 
-        .menu-button-text{
-            text-decoration: none;
-            color: white;
-        }
+#container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
 
-        .menu-linkList{
-            display: block;
-        }
+#menu {
+    background-color: #3EA6A7;
+    width: 20%;
+    height: 100%;
+    margin-bottom: 0px;
+    border: 8px;
+    border-color: #7A7B7B;
+    border-style: none solid none none;
+}
 
-        .menu-link{
-            display: block;
-            width: 70%;
-            padding: 1vw 0px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 1.5vw;
-            text-decoration: none;
-            color: white;
-        }
+.menu-button {
+    background-color: #3EA6A7;
+    color: white;
+    border: #3EA6A7;
+    width: 100%;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-size: 5vw;
+}
 
-            #event{
-                width: 80%;
-                background-image: url(../picture/webp/蒼翔祭ロゴ_33FFFF.webp);
-                background-color:rgba(255,255,255,0.7);
-                background-blend-mode:lighten;
-                overflow-y: scroll;
-                /* スクロールバーの消去 */
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-            #event::-webkit-scrollbar{/* スクロールバーの消去 */
-                display: none;
-            }
+.menu-button-text {
+    text-decoration: none;
+    color: white;
+}
 
-            .event-container{
-                width: 70%;
-                margin: auto;
-            }
+.menu-linkList {
+    display: block;
+}
 
-            .event-title-text{
-                text-align: center;
-                padding-top: 2vw;
-                padding-bottom: 4vw;
-            }
+.menu-link {
+    display: block;
+    width: 70%;
+    padding: 1vw 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+}
 
-            .event-box{
-                display: flex;
-                width: 100%;
-                height: 30vw;
-                background-color: azure;
-            }
+#event {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    background-image: url(../picture/webp/蒼翔祭ロゴ_0000FF.webp);
+    background-size: 10vw;
+    background-blend-mode: lighten;
+    overflow-y: scroll;
+    /* スクロールバーの消去 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
-            .event-img{
-                height: 28vw;
-                margin: 1vw;
-            }
+#event::-webkit-scrollbar {
+    /* スクロールバーの消去 */
+    display: none;
+}
 
-            .event-explanation{
-                width: 40%;
-            }
+#event-effect {
+    width: 100%;
+    /* 親要素に合わせて幅を設定 */
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    overflow: hidden;
+    /* 内容がはみ出さないように設定 */
+}
 
-            h2{
-                align-items: center; /*横線を上下中央*/
-                display: flex; /* 文字と横線を横並び */
-                justify-content: baseline; /* 文字を中央寄せ */
-            }
+.event-container {
+    width: 70%;
+    margin: auto;
+}
 
-            h2::after{
-                background-color: rgb(61, 61, 61);
-                content: "";
-                height: 1.5px;
-                margin-left: 15px;
-                flex-grow: 1;
-            }
+.event-title-text {
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+}
+
+.event-box {
+    display: flex;
+    width: 100%;
+    height: 30vw;
+    background-color: azure;
+}
+
+.event-img {
+    height: 28vw;
+    margin: 1vw;
+}
+
+.event-explanation {
+    width: 40%;
+}
+
+h2 {
+    align-items: center;
+    /*横線を上下中央*/
+    display: flex;
+    /* 文字と横線を横並び */
+    justify-content: baseline;
+    /* 文字を中央寄せ */
+}
+
+h2::after {
+    background-color: rgb(61, 61, 61);
+    content: "";
+    height: 1.5px;
+    margin-left: 15px;
+    flex-grow: 1;
+}
