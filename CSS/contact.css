@@ -72,20 +72,19 @@ body {
 }
 
 #contact {
+    position: relative;
     width: 80%;
-    /* background-color: bisque; */
+    height: 100%;
     background-image: url(../picture/webp/蒼翔祭ロゴ_CC00CC.webp);
     background-size: 10vw;
     background-blend-mode: lighten;
     overflow-y: scroll;
-    /* スクロールバーの消去 */
     -ms-overflow-style: none;
     scrollbar-width: none;
     font-weight: bold;
 }
 
 #contact::-webkit-scrollbar {
-    /* スクロールバーの消去 */
     display: none;
 }
 
