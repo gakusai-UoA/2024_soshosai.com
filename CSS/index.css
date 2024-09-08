@@ -178,3 +178,16 @@ p {
 .gest-picture-text {
     text-align: center;
 }
+
+.map-tag{
+    padding:5% 0;
+}
+
+.map-container{
+    text-align: center;
+}
+
+.map-img{
+    width: 40vw;
+    height: 40vw;
+}

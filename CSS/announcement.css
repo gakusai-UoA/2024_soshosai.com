@@ -85,7 +85,6 @@ body {
 }
 
 #announcement::-webkit-scrollbar {
-    /* スクロールバーの消去 */
     display: none;
 }
 
