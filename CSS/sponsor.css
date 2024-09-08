@@ -134,4 +134,5 @@
         overflow: hidden;
         margin: 2px;
         border-style: double;
+        place-content: center;
     }
