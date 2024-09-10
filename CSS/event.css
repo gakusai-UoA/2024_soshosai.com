@@ -32,7 +32,7 @@ body {
 
 p {
     font-weight: bold;
-    font-size: 1vw;
+    /* font-size: 1vw; */
 }
 
 #container {
@@ -145,13 +145,4 @@ p {
     /* border-bottom: 1px solid; */
 }
 
-h2 {
-    font-size: 1.5vw;
-    align-items: center;
-    /*横線を上下中央*/
-    display: flex;
-    /* 文字と横線を横並び */
-    justify-content: baseline;
-    /* 文字を中央寄せ */
-}
 
