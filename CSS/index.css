@@ -190,6 +190,6 @@ p {
 }
 
 .map-img{
-    width: 40vw;
-    height: 40vw;
+    height: 30vw;
+    object-fit: cover;
 }
