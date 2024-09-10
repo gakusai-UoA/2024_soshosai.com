@@ -13,6 +13,12 @@
         font-size: clamp(1.2rem, calc(1rem + 0.625vw), 1.7rem);
     }
 
+    .font-size-Link{
+        /* font-size: clamp(0.625rem, -4.2045rem + 24.1477vw, 11.25rem); */
+        font-size:clamp(0.625rem, -0.511rem + 5.68vw, 3.125rem);
+        /* font-size: 30px; */
+    }
+
     /*最小値:1.6rem → 可変（2.2rem + 0.625vw（画面幅320px:2px, 800px:5px, 1200px:7.5px））→ 最大値:2.9rem*/
     .font-size-L {
         font-size: clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
@@ -50,9 +56,9 @@
         border: #3EA6A7;
         width: 100%;
         height: auto;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        font-size: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        font-size: 4.8vw;
     }
 
     .menu-button-text {
@@ -62,15 +68,22 @@
 
     .menu-linkList {
         display: block;
+        text-align: center;
+    }
+
+    .menu-linkList-ul {
+        padding-left: 0;
+        list-style: none;
+        display: inline-block;
     }
 
     .menu-link {
         display: block;
-        width: 70%;
-        padding: 1vw 0px;
+        text-align: left;
+        width: 100%;
+        padding-bottom: 2vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.5vw;
         color: white;
     }
 
