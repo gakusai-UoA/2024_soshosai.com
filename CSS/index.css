@@ -72,8 +72,8 @@ p {
 
 .menu-link {
     display: block;
-    width: 70%;
-    padding: 1vw 0px;
+    width: 100%;
+    padding: auto 0px;
     margin-left: auto;
     margin-right: auto;
     /* font-size: 1.5vw; */
