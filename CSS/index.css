@@ -126,6 +126,10 @@ p {
     padding-bottom: 5vw;
 }
 
+.date{
+    text-align: center;
+}
+
 .theme-background {
     position: relative;
     background-color: #3EA6A7;
